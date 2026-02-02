@@ -129,6 +129,9 @@ async function loadMenus() {
 
 async function addMenu() {
   if (!newMenuName.value.trim()) return;
+  const maxOrder = menus.value.length
+    ? Math.max(...menus.value.map(m => m.order || 0))
+    : 0;
   await apiAddMenu({ name: newMenuName.value.trim(), order: maxOrder + 1 });
   newMenuName.value = '';
   loadMenus();
@@ -148,7 +151,12 @@ async function deleteMenu(id) {
 async function addSubMenu(menuId) {
   const menu = menus.value.find(m => m.id === menuId);
   const subMenuName = prompt('请输入子菜单名称：');
-  if (!subMenuName?.trim()) return;    
+  if (!subMenuName?.trim()) return;
+  
+  const maxOrder = menu.subMenus?.length
+    ? Math.max(...menu.subMenus.map(sm => sm.order || 0))
+    : 0;
+    
   await apiAddSubMenu(menuId, { name: subMenuName.trim(), order: maxOrder + 1 });
   loadMenus();
 }
@@ -653,3 +661,4 @@ function toggleSubMenu(menuId) {
 }
 
 </style> 
+
