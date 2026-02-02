@@ -31,9 +31,6 @@
         </button>
       </div>
     </div>
-    <div data-v-16a94230="" class="menu-item">
-      <button data-v-30afbc6e="" class="friend-link-btn">友情链接</button><!---->
-    </div>
   </nav>
 </template>
 
@@ -195,3 +192,4 @@ function hideSubMenu(menuId) {
 }
 
 </style> 
+
