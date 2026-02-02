@@ -340,7 +340,7 @@ function handleLogoError(event) {
 }
 
 .home-container {
-  min-height: 92vh;
+  min-height: 94vh;
   background-image: url('https://main.ssss.nyc.mn/background.webp');
   background-size: cover;
   background-position: center;
@@ -444,7 +444,7 @@ function handleLogoError(event) {
   margin-top: auto;
   text-align: center;
   padding-top: 1rem;
-  padding-bottom: 2rem;
+  padding-bottom: 0.25rem;
   position: relative;
   z-index: 2;
 }
@@ -738,5 +738,6 @@ function handleLogoError(event) {
 }
 
 </style> 
+
 
 
