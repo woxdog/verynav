@@ -340,7 +340,7 @@ function handleLogoError(event) {
 }
 
 .home-container {
-  min-height: 95vh;
+  min-height: 92vh;
   background-image: url('https://main.ssss.nyc.mn/background.webp');
   background-size: cover;
   background-position: center;
@@ -350,7 +350,7 @@ function handleLogoError(event) {
   flex-direction: column;
   /* padding: 1rem 1rem; */
   position: relative;
-  padding-top: 50px; 
+  padding-top: 45px; 
 }
 
 .home-container::before {
@@ -738,4 +738,5 @@ function handleLogoError(event) {
 }
 
 </style> 
+
 
