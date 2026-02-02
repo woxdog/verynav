@@ -63,7 +63,7 @@
           </svg>
           友情链接
         </button>
-        <p class="copyright">Copyright © 2025 Nav-Item </p>
+        <p class="copyright">Copyright © 2025-2026 非凡导航 all rights reserved</p>
       </div>
     </footer>
 
@@ -738,3 +738,4 @@ function handleLogoError(event) {
 }
 
 </style> 
+
