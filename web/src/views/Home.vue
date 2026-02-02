@@ -63,7 +63,7 @@
           </svg>
           友情链接
         </button>
-        <p class="copyright">Copyright © 2025 Nav-Item | <a href="https://github.com/eooce/Nav-Item" target="_blank" class="footer-link">Powered by eooce</a></p>
+        <p class="copyright">Copyright © 2025 Nav-Item </p>
       </div>
     </footer>
 
@@ -126,7 +126,13 @@ const showFriendLinks = ref(false);
 const friendLinks = ref([]);
 
 // 聚合搜索配置
-const searchEngines = [
+const searchEngines = [  
+  {
+    name: 'bing',
+    label: 'Bing',
+    placeholder: 'Bing 搜索...',
+    url: q => `https://www.bing.com/search?q=${encodeURIComponent(q)}`
+  },
   {
     name: 'google',
     label: 'Google',
@@ -138,12 +144,6 @@ const searchEngines = [
     label: '百度',
     placeholder: '百度搜索...',
     url: q => `https://www.baidu.com/s?wd=${encodeURIComponent(q)}`
-  },
-  {
-    name: 'bing',
-    label: 'Bing',
-    placeholder: 'Bing 搜索...',
-    url: q => `https://www.bing.com/search?q=${encodeURIComponent(q)}`
   },
   {
     name: 'github',
@@ -736,4 +736,5 @@ function handleLogoError(event) {
     gap: 20px;
   }
 }
+
 </style> 
