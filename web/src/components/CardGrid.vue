@@ -150,7 +150,7 @@ function truncate(str) {
 
 <style scoped>
 .container {
-  max-width: 55rem;
+  max-width: 60rem;
   margin: 0 auto;
   width: 100%;
   display: grid;
@@ -443,3 +443,4 @@ function truncate(str) {
   }
 }
 </style>
+
