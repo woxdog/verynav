@@ -78,7 +78,7 @@ function hideSubMenu(menuId) {
   color: #fff;
   font-size: 16px;
   font-weight: 500;
-  padding: 0.8rem 2rem;
+  padding: 0.8rem 1.5rem;
   cursor: pointer;
   transition: all 0.3s ease;
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
@@ -192,4 +192,5 @@ function hideSubMenu(menuId) {
 }
 
 </style> 
+
 
